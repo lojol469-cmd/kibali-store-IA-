@@ -1,0 +1,14 @@
+fastapi>=0.120,<1.0
+uvicorn[standard]>=0.30
+
+pydantic>=2.7,<3.0
+python-dotenv>=1.0
+
+huggingface-hub>=0.23
+transformers>=4.44
+accelerate>=0.33
+safetensors>=0.4
+hf_transfer>=0.1.6
+
+requests>=2.31
+psutil>=5.9
