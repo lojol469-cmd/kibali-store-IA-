@@ -4,7 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "frontend": "vite",
+    "backend": "cd backend && python -m uvicorn main:app --reload",
+    "dev": "concurrently --kill-others \"npm run frontend\" \"npm run backend\"",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -15,7 +17,10 @@
   },
   "devDependencies": {
     "@types/node": "^22.19.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "concurrently": "^9.2.1",
     "typescript": "~5.8.2",
     "vite": "^6.2.0",
     "vite-plugin-pwa": "^1.2.0"
