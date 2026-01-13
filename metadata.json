@@ -1,0 +1,7 @@
+{
+  "name": "Copy of KIBALI IA STORE",
+  "description": "Infrastructure de gestion de modèles d'IA haute performance. Backend FastAPI (Uvicorn) & Frontend React/Vite.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
